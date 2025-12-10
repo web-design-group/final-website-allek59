@@ -1,0 +1,413 @@
+:root {
+    --main-purple: #5b2fff; 
+    --light-purple: #E6D9FF; 
+    --text-dark: #000; 
+    --text-light: #fff; 
+}
+
+* {
+    box-sizing: border-box;
+}
+h1 {
+  all: initial;
+}
+
+h1 {
+  all: unset
+}
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--text-dark);
+    background: #fff;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.navbar-brand-custom {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--main-purple) !important;
+    letter-spacing: -1px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--text-dark) !important;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--main-purple) !important;
+    font-weight: 700;
+}
+
+
+.hero-section {
+    padding: 40px 0 20px 0;
+    position: relative;
+    width: 100%;
+    overflow: visible;
+}
+
+.hero-title {
+    font-style: italic;
+    font-weight: 1000;
+    font-size: 6vw;
+    
+    text-transform: uppercase;
+    color: var(--text-dark);
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: var(--main-purple);
+    display: inline-block;
+    position: relative;
+    margin-top: -25px;
+    z-index: 1;
+}
+
+
+
+
+
+.content-images-section {
+    margin-top: 2rem;
+    padding: 40px 0;
+}
+
+.content-images-section .row {
+    min-height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-images-section .text-block {
+    display: block;
+    flex: 1 1 380px;
+}
+
+.content-images-section .text-block p {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.content-images-section .text-block strong {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 4vw;
+    text-align: right;
+    display: block;
+}
+
+.content-images-section .text-block ul {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content-images-section .text-block li {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.content-images-section .text-block li strong {
+    font-style: normal;
+    font-weight: 700;
+    font-size: inherit;
+    text-align: left;
+    display: inline;
+}
+
+.content-images-section img {
+    height: 300px;
+    border-radius: 0;
+    object-fit: contain ;
+}
+
+.image-wrapper.left,
+.image-wrapper.right {
+    display: flex;
+    max-width: 580px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+
+
+.slider-section {
+    margin-top: 2rem;
+    padding: 20px 0;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.slider-text h2 {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 4vw;
+    margin: 0 0 -10px 0;
+    color: var(--text-dark);
+    line-height: 1;
+}
+
+.slider-text p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.carousel-item img {
+    border-radius: 80px 0 80px 0;
+    height: 250px;
+    object-fit: cover;
+}
+/* Стили для слайдера */
+        
+        /* Гарантируем одинаковый размер для всех изображений */
+        .carousel-inner .row {
+            align-items: stretch;
+        }
+        
+        .carousel-inner .col-md-6 {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Замедление анимации карусели */
+        .carousel-item {
+            transition: transform 5s ease-in-out !important; /* Увеличиваем время анимации */
+        }
+        
+        .carousel-fade .carousel-item {
+            transition-duration: 5s; /* Для fade анимации */
+        }
+/* Стили для проектов в карусели */
+.carousel-inner {
+    padding: 1rem;
+}
+
+.carousel-item .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.carousel-item .col-md-6 {
+    position: relative;
+}
+
+.project-caption {
+    background: #e6e6e6cc;
+    padding: 6px 10px;
+    border-radius: 80px 0 80px 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* --- Form Section ("АНКЕТА") --- */
+.form-section {
+    margin-top: 2rem;
+    padding: 40px 0;
+}
+
+.form-container {
+    border: 3px solid var(--main-purple);
+    border-radius: 5px;
+    padding: 3rem 2rem;
+    position: relative;
+    background-color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--main-purple);
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0 1rem;
+    z-index: 10;
+}
+
+.form-container p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #666;
+    font-size: 14px;
+}
+
+.form-control, .form-select {
+    border-color: var(--main-purple);
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    border-width: 3px;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(91, 47, 255, 0.25);
+    border-color: var(--main-purple);
+}
+
+.btn-submit {
+    background-color: var(--main-purple);
+    border: 3px solid var(--main-purple);
+    color: var(--text-light);
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 100%;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-submit:hover {
+    background: none;
+    color: var(--main-purple);
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--main-purple);
+    color: var(--text-light);
+    padding: 40px 20px 30px;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer a {
+    color: var(--text-light);
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--text-light);
+    text-decoration: underline;
+}
+
+.footer .contact-info p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .contact-info i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    width: 16px;
+}
+
+.btn-outline-light-custom {
+    background-color: #fff;
+    color: var(--main-purple);
+    border: 3px solid #ffffff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.btn-outline-light-custom:hover {
+    background-color: var(--main-purple);
+    border-color: black;
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30%;
+    font-size: 24px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin-left: 0;
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--text-light);
+}
+
+.footer .copyright {
+    margin-top: 30px;
+    font-size: 12px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+/* Адаптация структуры под новый дизайн */
+.footer .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .col-md-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
